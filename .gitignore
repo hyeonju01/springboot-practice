@@ -45,3 +45,7 @@ hell
 pom.xml
 mvnw
 mvnw.cmd
+
+### properties ###
+application.properties
+application.yml
