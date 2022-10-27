@@ -1,5 +1,6 @@
 package com.springboot.hello.controller;
 
+import com.springboot.hello.domain.dto.MemberDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -34,6 +35,10 @@ public class HelloController {
 
     }
 
+    @GetMapping (value = "/request3")
+    public String getRequestParam(MemberDto memberDto) {
+        return memberDto.toString();
+    }
 
 
 }
